@@ -8,10 +8,8 @@ export default function Home() {
         <title>Hideky's website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
-
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome</h1>
-
         <div className={styles.grid}>
           <p className={styles.description}>
             My name is Hideky. I am a web developer during the day, independent
@@ -22,8 +20,7 @@ export default function Home() {
             and physics (in no particular order).
           </p>
           <p className={styles.description}>
-            There are a few projects I plan to get started on pretty soon. Check
-            periodically for updates.
+            I am working on a few projects. Check periodically for updates.
           </p>
         </div>
         <img
@@ -37,7 +34,20 @@ export default function Home() {
         />
       </main>
 
-      <footer className={styles.footer}>This is a Work In Progess</footer>
+      <footer className={styles.footer}>
+        <div className={styles.iconBox}>
+          <a href="https://github.com/hidekysilva">
+            <img className={styles.icon} src="/github.svg" alt="Github icon" />
+          </a>
+          <a href="https://twitter.com/hidekysilva">
+            <img
+              className={styles.icon}
+              src="/twitter.svg"
+              alt="Twitter icon"
+            />
+          </a>
+        </div>
+      </footer>
     </div>
   );
 }
