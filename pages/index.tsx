@@ -26,6 +26,15 @@ export default function Home() {
             periodically for updates.
           </p>
         </div>
+        <img
+          className={styles.image}
+          src="/profile-picture-large.jpg"
+          alt="Hideky's profile picture"
+          srcSet="/profile-picture-small.jpg 480w,
+          /profile-picture-large.jpg 800w"
+          sizes="(max-width: 600px) 480px,
+            800px"
+        />
       </main>
 
       <footer className={styles.footer}>This is a Work In Progess</footer>
