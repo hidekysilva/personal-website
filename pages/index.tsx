@@ -1,5 +1,7 @@
 import Head from "next/head";
+
 import styles from "../styles/Home.module.css";
+import NavBar from "../components/navbar";
 
 export default function Home() {
   return (
@@ -8,6 +10,7 @@ export default function Home() {
         <title>Hideky's website</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+      <NavBar />
       <main className={styles.main}>
         <h1 className={styles.title}>Welcome</h1>
         <div className={styles.grid}>
